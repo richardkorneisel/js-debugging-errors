@@ -55,14 +55,14 @@ prompt. Then turn your lab in with a pull request on this repository.
 
 Please do not change the original broken code block in the prompts, make the correctins in the "How can you resolve/fix the error?" section.
 
-We've provided an html file inside of `lib/` that you can use to test out the
+We've provided html and javascript files inside of `lib/` that you can use to test out the
 code. Add each code snippet to the html file and review it in the browser.
 
 **Please format your responses in Markdown. Use [this cheetsheat](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet) to see how to do so**
 
 ## Bonus
 
-If you finish with these 10 bugs, explore some of the [debugging Katas](https://www.codewars.com/kata/search/javascript?q=&r%5B%5D=-8&r%5B%5D=-7&r%5B%5D=-6&tags=Bugs&beta=false) on Code Wars.
+If you finish with these 11 bugs, explore some of the [debugging Katas](https://www.codewars.com/kata/search/javascript?q=&r%5B%5D=-8&r%5B%5D=-7&r%5B%5D=-6&tags=Bugs&beta=false) on Code Wars.
 
 ## [License](LICENSE)
 
