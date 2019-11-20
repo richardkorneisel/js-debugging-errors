@@ -10,10 +10,8 @@ the error message, (b) what is causing the error message and (c) how to resolve 
 We want an alert to appear in the browser that says "Hello World". But for some
 reason, it's not working ...
 
-```html
-<script>
-  alert(greeting);
-</script>
+```js
+alert(greeting);
 ```
 
 A. What is the error message?
@@ -22,10 +20,8 @@ B. What is causing the error?
 
 C. How can you resolve/fix the error?
 
-```html
-<script>
-  alert(greeting);
-</script>
+```js
+alert(greeting);
 ```
 
 ### Prompt #2
@@ -33,15 +29,13 @@ C. How can you resolve/fix the error?
 We're trying to log the birds with names that are more than 4 characters long.
 But for some reason, it's not working ...
 
-```html
-<script>
+```js
 let birds = ['Eagle', 'Falcon', 'Duck', 'Turkey']
 
 birds.forEach(function(bird) {
   if (bird.length > 4) {
     console.log(bird)
 }
-</script>
 ```
 
 A. What is the error message?
@@ -50,15 +44,13 @@ B. What is causing the error?
 
 C. How can you resolve/fix the error?
 
-```html
-<script>
+```js
 let birds = ['Eagle', 'Falcon', 'Duck', 'Turkey']
 
 birds.forEach(function(bird) {
   if (bird.length > 4) {
     console.log(bird)
 }
-</script>
 ```
 
 ### Prompt #3
@@ -66,12 +58,10 @@ birds.forEach(function(bird) {
 We're trying to concatenate these two strings together. But for some reasons,
 it's not working ...
 
-```html
-<script>
-  let greeting = "hello"
-  greeting.push(" world")
-  console.log(greeting)
-</script>
+```js
+let greeting = "hello";
+greeting.push(" world");
+console.log(greeting);
 ```
 
 A. What is the error message?
@@ -80,12 +70,10 @@ B. What is causing the error?
 
 C. How can you resolve/fix the error?
 
-```html
-<script>
-  let greeting = "hello"
-  greeting.push(" world")
-  console.log(greeting)
-</script>
+```js
+let greeting = "hello";
+greeting.push(" world");
+console.log(greeting);
 ```
 
 ### Prompt #4
@@ -93,11 +81,11 @@ C. How can you resolve/fix the error?
 We're trying to call the `greet` function. But for some reason, it's not working
 ...
 
-```html
-<script>
-  this.greet()
-</script>
+```js
+this.greet();
 ```
+
+**Hint:** What is `this` in the global scope in our browser?
 
 A. What is the error message?
 
@@ -105,10 +93,8 @@ B. What is causing the error?
 
 C. How can you resolve/fix the error?
 
-```html
-<script>
-  this.greet()
-</script>
+```js
+this.greet();
 ```
 
 ### Prompt #5
@@ -116,11 +102,9 @@ C. How can you resolve/fix the error?
 We're trying to print Bob's name to the console. But for some reason, it's not
 working ...
 
-```html
-<script>
-  var bob;
-  console.log(bob.name)
-</script>
+```js
+var bob;
+console.log(bob.name);
 ```
 
 A. What is the error message?
@@ -129,11 +113,9 @@ B. What is causing the error?
 
 C. How can you resolve/fix the error?
 
-```html
-<script>
-  var bob;
-  console.log(bob.name)
-</script>
+```js
+var bob;
+console.log(bob.name);
 ```
 
 ### Prompt #6
@@ -141,12 +123,10 @@ C. How can you resolve/fix the error?
 We're trying to print the message to the console. But for some reason, it's not
 working...
 
-```html
-<script>
+```js
   let forSale = "sea shells"
   let message = `She "sells' ${forSale} by \`sea' sea shore'
   console.log(message)
-</script>
 ```
 
 A. What is the error message?
@@ -155,12 +135,10 @@ B. What is causing the error?
 
 C. How can you resolve/fix the error?
 
-```html
-<script>
+```js
   let forSale = "sea shells"
   let message = `She "sells' ${forSale} by \`sea' sea shore'
   console.log(message)
-</script>
 ```
 
 ### Prompt #7
@@ -168,26 +146,24 @@ C. How can you resolve/fix the error?
 We're trying to print Bob's first name to the console. But for some reason, it's
 not working.
 
-```html
-<script>
-  const bob = {
-    profile: {
-      name: {
-        firstName: 'Bob',
-        lastName: 'Seger'
-      },
-      age: 73,
-      dateOfBirth: {
-        month: 'May',
-        day: 6,
-        year: 1945
-      },
-      career: 'Singer'
-    }
+```js
+const bob = {
+  profile: {
+    name: {
+      firstName: "Bob",
+      lastName: "Seger"
+    },
+    age: 73,
+    dateOfBirth: {
+      month: "May",
+      day: 6,
+      year: 1945
+    },
+    career: "Singer"
   }
+};
 
-  console.log(bob.name.first_name)
-</script>
+console.log(bob.name.first_name);
 ```
 
 A. What is the error message?
@@ -196,26 +172,24 @@ B. What is causing the error?
 
 C. How can you resolve/fix the error?
 
-```html
-<script>
-  const bob = {
-    profile: {
-      name: {
-        firstName: 'Bob',
-        lastName: 'Seger'
-      },
-      age: 73,
-      dateOfBirth: {
-        month: 'May',
-        day: 6,
-        year: 1945
-      },
-      career: 'Singer'
-    }
+```js
+const bob = {
+  profile: {
+    name: {
+      firstName: "Bob",
+      lastName: "Seger"
+    },
+    age: 73,
+    dateOfBirth: {
+      month: "May",
+      day: 6,
+      year: 1945
+    },
+    career: "Singer"
   }
+};
 
-  console.log(bob.name.first_name)
-</script>
+console.log(bob.name.first_name);
 ```
 
 ### Prompt #8
@@ -224,22 +198,20 @@ We're trying to make it so that when we call the `greet` method of `person`, an
 alert appears with the person's full name. But for some reason, it's not working
 ...
 
-```html
-<script>
+```js
 let person = {
-  firstName: 'Bob',
-  lastName: 'Seger',
+  firstName: "Bob",
+  lastName: "Seger",
   greet: function() {
     function fullName() {
-      return `${this.firstName} ${this.lastName}`
+      return `${this.firstName} ${this.lastName}`;
     }
 
-    alert(fullName())
+    alert(fullName());
   }
-}
+};
 
-person.greet()
-</script>
+person.greet();
 ```
 
 A. What is the error message?
@@ -248,22 +220,20 @@ B. What is causing the error?
 
 C. How can you resolve/fix the error?
 
-```html
-<script>
+```js
 let person = {
-  firstName: 'Bob',
-  lastName: 'Seger',
+  firstName: "Bob",
+  lastName: "Seger",
   greet: function() {
     function fullName() {
-      return `${this.firstName} ${this.lastName}`
+      return `${this.firstName} ${this.lastName}`;
     }
 
-    alert(fullName())
+    alert(fullName());
   }
-}
+};
 
-person.greet()
-</script>
+person.greet();
 ```
 
 ### Prompt #9
@@ -271,9 +241,9 @@ person.greet()
 We're trying to implement the [Fibonacci Sequence](https://en.wikipedia.org/wiki/Fibonacci_number). But for some reason,
 it's not working ...
 
-```html
-<script>
+**Note:** The commented out code is part of the prompt. It represents code we've tried to implement to complete the function, and we may or may not need all or some of the commented out code in the final solution.
 
+```js
 function createSequence( max ) {
   let sequence = [1, 1]
   // a = 1
@@ -293,8 +263,6 @@ function createSequence( max ) {
 
 let sequence = createSequence(20)
 console.log(sequence)
-
-</script>
 ```
 
 A. What is the error message?
@@ -303,9 +271,7 @@ B. What is causing the error?
 
 C. How can you resolve/fix the error?
 
-```html
-<script>
-
+```js
 function createSequence( max ) {
   let sequence = [1, 1]
   // a = 1
@@ -325,8 +291,6 @@ function createSequence( max ) {
 
 let sequence = createSequence(20)
 console.log(sequence)
-
-</script>
 ```
 
 ### Prompt #10
@@ -334,8 +298,7 @@ console.log(sequence)
 We're trying to make a working counter object. But for some reason, it's not
 working ...
 
-```html
-<script>
+```js
 const Counter = {
   total: 0,
 }
@@ -366,7 +329,6 @@ Counter.decrease()
 console.log(Counter.total)  // => value = 2
 Counter.rest()
 console.log(Counter.total) // => value = 0
-</script>
 ```
 
 A. What is the error message?
@@ -375,8 +337,7 @@ B. What is causing the error?
 
 C. How can you resolve/fix the error?
 
-```html
-<script>
+```js
 const Counter = {
   total: 0,
 }
@@ -407,7 +368,6 @@ Counter.decrease()
 console.log(Counter.total)  // => value = 2
 Counter.rest()
 console.log(Counter.total) // => value = 0
-</script>
 ```
 
 ### Prompt #11
@@ -415,8 +375,7 @@ console.log(Counter.total) // => value = 0
 We're trying to print the string `"hello world"`. But for some reason, it's not
 working ...
 
-```html
-<script>
+```js
 let obj = {
   oompa: [
     {
@@ -431,11 +390,10 @@ let obj = {
       }
     }
   ]
-}
+};
 
-let message = obj[0].oompa.loompa[0].doopati.do[2]
-console.log(message)
-</script>
+let message = obj[0].oompa.loompa[0].doopati.do[2];
+console.log(message);
 ```
 
 A. What is the error message?
@@ -444,8 +402,7 @@ B. What is causing the error?
 
 C. How can you resolve/fix the error?
 
-```html
-<script>
+```js
 let obj = {
   oompa: [
     {
@@ -460,9 +417,8 @@ let obj = {
       }
     }
   ]
-}
+};
 
-let message = obj[0].oompa.loompa[0].doopati.do[2]
-console.log(message)
-</script>
+let message = obj[0].oompa.loompa[0].doopati.do[2];
+console.log(message);
 ```
