@@ -15,13 +15,13 @@ alert(greeting);
 ```
 
 A. What is the error message?
-
+ReferenceError: greeting is not defined
 B. What is causing the error?
-
+No quotes around the word "greeting"
 C. How can you resolve/fix the error?
-
+Put quotes around greeting
 ```js
-alert(greeting);
+alert('"Hello World"');
 ```
 
 ### Prompt #2
@@ -39,18 +39,19 @@ birds.forEach(function(bird) {
 ```
 
 A. What is the error message?
-
+No error message.  No output. Then Uncaught SyntaxError: missing { before function body.
 B. What is causing the error?
-
+Missing closing brackets at end of code.
 C. How can you resolve/fix the error?
-
+put in brackets.
 ```js
 let birds = ['Eagle', 'Falcon', 'Duck', 'Turkey']
 
 birds.forEach(function(bird) {
   if (bird.length > 4) {
     console.log(bird)
-}
+  }
+})
 ```
 
 ### Prompt #3
@@ -65,15 +66,15 @@ console.log(greeting);
 ```
 
 A. What is the error message?
-
+Uncaught TypeError: greeting.push is not a function
 B. What is causing the error?
-
+Push is an array function.  No array.
 C. How can you resolve/fix the error?
-
+Missing brackets to allow push to work.  Add brackets around hello.  Also had to add join to get stings to concatenate.
 ```js
-let greeting = "hello";
-greeting.push(" world");
-console.log(greeting);
+let greeting = ["hello"];
+greeting.push (" world");
+console.log(greeting.join(""));
 ```
 
 ### Prompt #4
@@ -86,9 +87,9 @@ this.greet();
 ```
 
 **Hint:** What is `this` in the global scope in our browser?
-
+// Needs to be a property of an object.  Move on for now.
 A. What is the error message?
-
+Uncaught TypeError: this.greet is not a function
 B. What is causing the error?
 
 C. How can you resolve/fix the error?
@@ -108,13 +109,15 @@ console.log(bob.name);
 ```
 
 A. What is the error message?
-
+Uncaught TypeError: bob is undefined
 B. What is causing the error?
-
+object.name was not defined
 C. How can you resolve/fix the error?
-
+define variable bob with name in brackets.
 ```js
-var bob;
+var bob = {
+   name: "Bob" 
+};
 console.log(bob.name);
 ```
 
@@ -130,14 +133,14 @@ working...
 ```
 
 A. What is the error message?
-
+Uncaught SyntaxError: `` literal not terminated before end of script
 B. What is causing the error?
-
+Improper puncuation in message.  Need back tics.
 C. How can you resolve/fix the error?
-
+Back ticks and elimate other punctuation.  replace sea with the.
 ```js
   let forSale = "sea shells"
-  let message = `She "sells' ${forSale} by \`sea' sea shore'
+  let message = `She sells ${forSale} by the sea shore`
   console.log(message)
 ```
 
